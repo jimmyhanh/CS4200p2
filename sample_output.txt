@@ -1,0 +1,53 @@
+==========================================
+   8-Queens Problem Solver  (CS4200 P2)  
+==========================================
+
+=== Three Sample Solutions (Min-Conflicts) ===
+
+Solution 1  (steps: 5):
+  Positions (col->row): [2, 5, 7, 1, 3, 0, 6, 4]
+  . . . . . Q . . 
+  . . . Q . . . . 
+  Q . . . . . . . 
+  . . . . Q . . . 
+  . . . . . . . Q 
+  . Q . . . . . . 
+  . . . . . . Q . 
+  . . Q . . . . . 
+
+Solution 2  (steps: 17):
+  Positions (col->row): [3, 7, 0, 4, 6, 1, 5, 2]
+  . . Q . . . . . 
+  . . . . . Q . . 
+  . . . . . . . Q 
+  Q . . . . . . . 
+  . . . Q . . . . 
+  . . . . . . Q . 
+  . . . . Q . . . 
+  . Q . . . . . . 
+
+Solution 3  (steps: 67):
+  Positions (col->row): [3, 7, 0, 2, 5, 1, 6, 4]
+  . . Q . . . . . 
+  . . . . . Q . . 
+  . . . Q . . . . 
+  Q . . . . . . . 
+  . . . . . . . Q 
+  . . . . Q . . . 
+  . . . . . . Q . 
+  . Q . . . . . . 
+
+=== Algorithm Analysis ===
+
+Running analysis on 500 random instances...
+
+--- Steepest-Ascent Hill Climbing (500 instances) ---
+  Solved       : 68 / 500  (13.6%)
+  Avg steps    : 3.24
+  Avg time     : 0.0343 ms
+
+--- Min-Conflicts (500 instances, max 1000 steps/instance) ---
+  Solved       : 472 / 500  (94.4%)
+  Avg steps    : 115.09
+  Avg time     : 0.0496 ms
+
